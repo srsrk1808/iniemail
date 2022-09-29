@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.title {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.upperBody {
+  display: grid;
+  grid-template-rows: 2fr 4fr;
+}
+
+.date {
+  text-align: right;
+  padding: 32px 16px;
+}
+
+.titleContianer {
+  display: flex;
+  align-items: center;
+}
+
+.reportTitle {
+  font-size: 4rem;
+  padding: 16px;
+}
+
+.lowerBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: #d3e9ee;
+}
+
+.clientDetailContainer {
+  padding: 16px;
+}
+
+.clientDetails {
+  text-align: right;
+}
+
+/* ________________ */
+
+.tableMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 16px;
+  margin-bottom: 32px;
+  background-color: black;
+  color: white;
+}
+
+.greeting {
+  font-size: 32px;
+}
+
+.tableTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.tableTitle {
+  font-size: 32px;
+}
+
+.tableSubtitle {
+  font-size: 18px;
+}
+
+.tableContainer {
+  height: 320px;
+  display: grid;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px lightgray;
+  text-align: left;
+  width: 100%;
+}
+
+thead {
+  box-shadow: 0 5px 10px lightgray;
+}
+
+th {
+  padding: 16px 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: #d3e9ee;
+  border: 8px solid white;
+}
+
+td {
+  padding: 16px 18px;
+  background-color: aliceblue;
+  border: 10px solid white;
+}
+
+.digit {
+  width: 64px;
+}
+
+.siteTitle {
+  width: 256px;
+  white-space: nowrap;
+}
+
+.gap {
+  height: 32px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.gapColor {
+  background-color: #d3e9ee;
+  height: 16px;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .reportTitle {
+    font-size: 2rem;
+  }
+  .title {
+    grid-template-rows: 1fr 1fr;
+  }
+  .siteName {
+    width: 320px;
+    white-space: nowrap;
+  }
+}
